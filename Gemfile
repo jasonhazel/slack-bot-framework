@@ -10,12 +10,13 @@ gem 'celluloid-io'
 gem 'httparty'
 gem 'activesupport'
 gem 'activerecord'
-gem 'sqlite3'
+gem 'pg'
 
 group :development, :test do
   gem 'rake'
   gem 'foreman'
   gem 'pry'
+  gem 'sqlite3'
 end
 
 group :test do
