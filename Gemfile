@@ -9,6 +9,8 @@ gem 'dotenv'
 gem 'celluloid-io'
 gem 'httparty'
 gem 'activesupport'
+gem 'activerecord'
+gem 'sqlite3'
 
 group :development, :test do
   gem 'rake'
