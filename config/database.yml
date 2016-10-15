@@ -4,8 +4,8 @@ development:
   pool: 5
   timeout: 5000
 
-production:
-  database: junkrat_production
+development:
   adapter: postgresql
   host: localhost
-  password:
+  username: user
+  database: app-dev
