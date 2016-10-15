@@ -15,6 +15,7 @@ module Overwatch
     end
 
     def stat(key)
+      return nil if stats.any.nil?
       stats.any.stats.quickplay.game_stats.send(key)
     end
   end
