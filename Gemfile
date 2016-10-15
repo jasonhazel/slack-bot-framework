@@ -1,14 +1,19 @@
 source 'http://rubygems.org'
 
+ruby '2.2.5'
+
 gem 'slack-ruby-bot'
 gem 'puma'
 gem 'sinatra'
 gem 'dotenv'
 gem 'celluloid-io'
+gem 'httparty'
+gem 'activesupport'
 
 group :development, :test do
   gem 'rake'
   gem 'foreman'
+  gem 'pry'
 end
 
 group :test do
