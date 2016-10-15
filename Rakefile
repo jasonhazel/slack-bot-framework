@@ -2,7 +2,7 @@ require 'active_record'
 require 'yaml'
 
 configuration = YAML::load(IO.read('config/database.yml'))
-ActiveRecord::Base.establish_connection(configuration['development'])
+ActiveRecord::Base.establish_connection(configuration['production'])
 
 task :default => :migrate
 
