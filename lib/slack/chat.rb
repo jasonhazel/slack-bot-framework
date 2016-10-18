@@ -1,3 +1,4 @@
+# TODO: break this into individual files
 module Slack
   module Message
     class Base
@@ -10,7 +11,7 @@ module Slack
 
     class Text < Base
       def send(message)
-        @client.say(channel: data.channel, text: message)
+        @client.say(channel: @data.channel, text: message)
       end
     end
 

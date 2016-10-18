@@ -10,7 +10,7 @@ Thread.abort_on_exception = true
 
 Thread.new do
   begin
-    Bot.run
+    Bot::Application.run
   rescue Exception => e
     STDERR.puts "ERROR: #{e}"
     STDERR.puts e.backtrace
