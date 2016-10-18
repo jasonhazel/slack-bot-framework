@@ -1,9 +1,9 @@
 require 'sinatra/base'
 
-module Junkrat
+module Bot
   class Web < Sinatra::Base
     get '/' do
-      'Junkrat Online'
+      'Online'
     end
   end
 end

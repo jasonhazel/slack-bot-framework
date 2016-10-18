@@ -25,13 +25,3 @@ module Slack
     end
   end
 end
-
-
-
-#
-#
-# Junkrat.card(client, data, [{
-#         color: '#000',
-#         title: ":junkrat: #{user.name}'s Overwatch Stats",
-#         text: ":white_check_mark: #{user.wins} :clock430: #{user.time_played} :skull: #{user.eliminations} :yellow_heart: #{user.healing_done} :heart: #{user.damage_done}"
-#       }])
