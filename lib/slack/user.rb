@@ -6,7 +6,8 @@ module Slack
       @id = id
     end
 
-    def to_mention
+
+    def to_s
       "<@#{@id}>"
     end
 
