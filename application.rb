@@ -1,11 +1,7 @@
 require 'slack-ruby-bot'
 require 'active_support'
+require 'sinatra/base'
 
-module Bot
-  class Application < SlackRubyBot::Bot
-
-  end
-end
 
 # TODO: better autoloading.
 autoload_paths = [
@@ -15,3 +11,15 @@ autoload_paths = [
 ]
 
 autoload_paths.flatten.each { |file| require file }
+
+module Application
+  class Bot < SlackRubyBot::Bot
+
+  end
+
+  class Web < Sinatra::Base
+    get '/' do
+      'Online'
+    end
+  end
+end
